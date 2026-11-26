@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destinations | Akash Travel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                AKASH<span>TRAVEL.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="packages.html">Tour Packages</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-button">Book Your Trip</a>
+
+        </nav>
+    </header>
+
+
+    <!-- DESTINATION HERO -->
+    <section class="destination-hero">
+
+        <div class="destination-hero-overlay"></div>
+
+        <div class="container destination-hero-content">
+
+            <span class="hero-label">EXPLORE ETHIOPIA WITH US</span>
+
+            <h1>Discover Amazing<br><span>Destinations</span></h1>
+
+            <p>
+                From ancient historical wonders to breathtaking landscapes,
+                discover the extraordinary beauty of Ethiopia.
+            </p>
+
+            <a href="#all-destinations" class="btn btn-primary">
+                Explore Destinations ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- DESTINATION INTRO -->
+    <section class="destination-intro section-padding">
+
+        <div class="container center-heading">
+
+            <span class="section-label">YOUR ADVENTURE STARTS HERE</span>
+
+            <h2>Explore the Beauty of Ethiopia</h2>
+
+            <p>
+                Ethiopia offers incredible historical sites, natural wonders,
+                unique cultures and unforgettable adventures.
+                Choose your next destination and let Akash Travel
+                help you plan your journey.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ALL DESTINATIONS -->
+    <section class="all-destinations section-padding" id="all-destinations">
+
+        <div class="container">
+
+            <div class="destination-tools">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        id="destinationSearch"
+                        placeholder="Search destinations..."
+                        aria-label="Search destinations">
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="historical">Historical</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="adventure">Adventure</button>
+                    <button class="filter-btn" data-filter="culture">Culture</button>
+                </div>
+
+            </div>
+
+
+            <div class="destination-gallery" id="destinationGallery">
+
+                <!-- LALIBELA -->
+                <article class="destination-item" data-category="historical">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800"
+                             alt="Ethiopian historical landscape">
+                        <span class="destination-tag">Historical</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">AMHARA REGION</span>
+                        <h3>Lalibela</h3>
+                        <p>Discover the famous rock-hewn churches and remarkable religious heritage of Ethiopia.</p>
+                        <a href="contact.html?destination=Lalibela" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- SIMIEN MOUNTAINS -->
+                <article class="destination-item" data-category="nature adventure">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+                             alt="Mountain landscape">
+                        <span class="destination-tag">Nature</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">AMHARA REGION</span>
+                        <h3>Simien Mountains</h3>
+                        <p>Explore spectacular mountain scenery, dramatic cliffs and unique wildlife.</p>
+                        <a href="contact.html?destination=Simien%20Mountains" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- DANAKIL -->
+                <article class="destination-item" data-category="adventure nature">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800"
+                             alt="Desert landscape">
+                        <span class="destination-tag">Adventure</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">AFAR REGION</span>
+                        <h3>Danakil Depression</h3>
+                        <p>Discover extraordinary desert landscapes and colorful geological formations.</p>
+                        <a href="contact.html?destination=Danakil%20Depression" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- AXUM -->
+                <article class="destination-item" data-category="historical">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1590050752117-23a9d7fc7b6d?w=800"
+                             alt="Ancient stone architecture">
+                        <span class="destination-tag">Historical</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">TIGRAY REGION</span>
+                        <h3>Axum</h3>
+                        <p>Discover ancient obelisks, archaeological sites and the legacy of an ancient kingdom.</p>
+                        <a href="contact.html?destination=Axum" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- GONDAR -->
+                <article class="destination-item" data-category="historical">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1564594736624-def7a10ab047?w=800"
+                             alt="Historic castle architecture">
+                        <span class="destination-tag">Historical</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">AMHARA REGION</span>
+                        <h3>Gondar</h3>
+                        <p>Visit the historic royal castles and discover Ethiopia's imperial history.</p>
+                        <a href="contact.html?destination=Gondar" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- OMO VALLEY -->
+                <article class="destination-item" data-category="culture">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=800"
+                             alt="Cultural travel landscape">
+                        <span class="destination-tag">Culture</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">SOUTH ETHIOPIA</span>
+                        <h3>Omo Valley</h3>
+                        <p>Experience the diverse cultures, traditions and communities of southern Ethiopia.</p>
+                        <a href="contact.html?destination=Omo%20Valley" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- BALE MOUNTAINS -->
+                <article class="destination-item" data-category="nature adventure">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800"
+                             alt="Wildlife and nature">
+                        <span class="destination-tag">Nature</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">OROMIA REGION</span>
+                        <h3>Bale Mountains</h3>
+                        <p>Explore beautiful highlands, forests and remarkable Ethiopian wildlife.</p>
+                        <a href="contact.html?destination=Bale%20Mountains" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- HARAR -->
+                <article class="destination-item" data-category="historical culture">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800"
+                             alt="Historic city architecture">
+                        <span class="destination-tag">Culture</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">HARARI REGION</span>
+                        <h3>Harar Jugol</h3>
+                        <p>Explore the historic walled city, traditional houses and colorful markets.</p>
+                        <a href="contact.html?destination=Harar%20Jugol" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+
+                <!-- LAKE TANA -->
+                <article class="destination-item" data-category="nature historical">
+                    <div class="destination-photo">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800"
+                             alt="Beautiful lake and mountain landscape">
+                        <span class="destination-tag">Nature</span>
+                    </div>
+                    <div class="destination-details">
+                        <span class="destination-location">AMHARA REGION</span>
+                        <h3>Lake Tana</h3>
+                        <p>Discover Ethiopia's largest lake, island monasteries and the Blue Nile region.</p>
+                        <a href="contact.html?destination=Lake%20Tana" class="destination-link">Explore & Book →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="no-results" id="noResults" hidden>
+                No destinations found. Try another search.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta section-padding">
+
+        <div class="container cta-content">
+
+            <span class="section-label">PLAN YOUR NEXT ADVENTURE</span>
+
+            <h2>Which Destination Will You Explore?</h2>
+
+            <p>
+                Let Akash Travel help you discover the extraordinary
+                beauty of Ethiopia.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">
+                Book Your Adventure →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    AKASH<span>TRAVEL.</span>
+                </a>
+                <p>Discover Ethiopia with us. Explore more, experience more and create memories.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+
+                <a href="destinations.html">Destinations</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="packages.html">Tour Packages</a>
+                <a href="about.html">About Us</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <a href="contact.html">Contact Page</a>
+                <p>Addis Ababa, Ethiopia</p>
+                <p>WhatsApp & Telegram bookings</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Akash Travel. All Rights Reserved.</p>
+            <p>Made for discovering Ethiopia.</p>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
